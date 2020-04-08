@@ -5,7 +5,10 @@ import Movie from "../component/mov.js";
 class Movies extends React.Component {
   render() {
     return (
-      <Movie onItemClick={this.props.loadData} data={this.props.data}></Movie>
+      <Movie
+        handleItemClick={this.props.loadData}
+        data={this.props.data}
+      ></Movie>
     );
   }
 }

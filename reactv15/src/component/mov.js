@@ -1,16 +1,17 @@
 import React from "react";
 
 class Movie extends React.Component {
-  handleItemClick = (data) => {
-    if (this.props.onItemClick) {
-      this.props.onItemClick(data);
-    }
-  };
+  // handleItemClick = (results) => {
+  //   if (this.props.onItemClick) {
+  //     this.props.onItemClick(results);
+  //   }
+  // };
 
   render() {
     return (
       <div>
-        <button onItemClick={this.handleItemClick}>see movie</button>
+        <button onClick={this.props.handleItemClick}>see movie</button>
+        <div> {this.props.data}</div>
       </div>
     );
   }
