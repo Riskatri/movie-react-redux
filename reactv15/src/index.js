@@ -10,27 +10,3 @@ ReactDOM.render(<App />, document.getElementById("root"));
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
-
-// import React from "react";
-// import ReactDOM from "react-dom";
-// import { createStore, applyMiddleware } from "redux";
-// import { Provider } from "react-redux";
-// import thunk from "redux-thunk";
-// import reducers from "./reducers/index.js";
-// import Movies from "./container/movie.js";
-// import "./index.css";
-
-// let store = createStore(reducers, applyMiddleware(thunk));
-
-// class App extends React.Component {
-//   render() {
-//     return <Movies></Movies>;
-//   }
-// }
-
-// ReactDOM.render(
-//   <Provider store={store}>
-//     <App />
-//   </Provider>,
-//   document.getElementById("root")
-// );
