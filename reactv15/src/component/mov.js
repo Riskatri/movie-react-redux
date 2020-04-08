@@ -1,9 +1,9 @@
 import React from "react";
 
 class Movie extends React.Component {
-  handleItemClick = (item) => {
+  handleItemClick = (data) => {
     if (this.props.onItemClick) {
-      this.props.onItemClick(item);
+      this.props.onItemClick(data);
     }
   };
 
