@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export function loadColor() {
+export function loadData() {
   return (dispatch) => {
     return axios
       .get(
