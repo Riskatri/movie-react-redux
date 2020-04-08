@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import axios from "axios";
 
 class Movies extends Component {
   constructor(props) {
@@ -19,24 +18,12 @@ class Movies extends Component {
     this.setState({ data: data.results });
   }
 
-  // componentDidMount() {
-  //   axios
-  //     .get(
-  //       "https://api.themoviedb.org/3/discover/movie?api_key=f7b67d9afdb3c971d4419fa4cb667fbf"
-  //     )
-  //     .then((res) => {
-  //       console.log(res);
-  //       this.setState({ data: res.data.results });
-  //     });
-  // }
-
   render() {
     return (
       <div className="container">
         {this.state.data.map((results) => (
           <h1 key={results.id}>
-            {results.original_title}
-            <p> {results.release_date} </p>
+            {results.original_title}: {results.release_date}
           </h1>
         ))}
       </div>
